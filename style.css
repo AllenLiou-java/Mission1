@@ -1,0 +1,227 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 內容樣式 */
+
+/* font-family: 'Noto Sans', sans-serif;
+font-family: 'Noto Sans TC', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+body,html{
+	font-family: 'Noto Sans';
+	font-weight: normal;
+}
+
+p,li{
+	font-size: 24px;
+	line-height: 36px;
+}
+
+.page{
+	width: 1920px;
+    height: 3017px;
+	padding-top: 47px;
+	padding-bottom: 0px;
+	border: 1px solid #000;
+	/* background-color: yellow; */
+}
+
+.page .intro, .page .workExp{
+    padding-left: 360px;
+	padding-right: 360px;
+	
+}
+
+
+/*-------------------------- 自介區塊 --------------------------*/
+
+.intro .name h1{
+	font-size: 80px;
+	line-height: 94px;
+	font-family: 'Roboto','Regular';
+}
+
+.intro .myphoto img{
+	width: 324px;
+	height: 324px;
+	margin-top: 48px;
+	margin-bottom: 48px;
+}
+
+.intro .line{
+	border: 2px solid #000;
+	background-color: #000;
+	margin-top: 17px;
+}
+
+
+/*-------------------------- 自介區塊 - 開頭 --------------------------*/
+.title{
+	font-size: 32px;
+	line-height: 43px;
+	font-family: 'Noto Sans TC', 'Noto Sans';
+}
+
+.subtitle{
+	font-size: 24px;
+	font-family: 'Noto Sans TC', 'Noto Sans';
+	line-height: 28px;
+	margin-left: 16px;
+}
+
+.intro .title, .workExp .title{
+	color: #000;
+	margin-bottom: 8px;
+}
+
+.intro .subtitle, .workExp .subtitle{
+	color: #A00404;
+}
+
+.intro .subLine, .workExp .subLine{
+	border: 1px solid #000;
+	background-color: #000;
+	margin-top: 8px;
+	margin-bottom: 16px;
+	opacity: 0.3;
+}
+
+.intro li, .workExp li{
+	margin-bottom: 24px;
+}
+
+.education, .skill, .workExp, .contact{
+	margin-top: 72px;
+}
+
+
+/*-------------------------- 技能區塊 --------------------------*/
+
+.page .skill, .page .contact{
+	/* text-align: center; */
+	background-color: #415165;
+	margin-top: 72px;
+	margin-bottom: 72px;
+	color: white;
+}
+
+.skill{
+	padding-top: 24px;
+	padding-bottom: 16px;
+	position: relative;
+}
+
+.skill .subLine{
+	width: 996px;
+	margin-top: 8px;
+	margin-bottom: 40px;
+	border: 1px solid #fff;
+	opacity: 0.3;
+}
+
+.skillList{
+	position: relative;
+	left: 852px;
+	padding-left: 24px;
+	border-left: 3px solid rgba(255,255,255,0.3);
+}
+
+.skillList li{
+	margin-bottom: 20px;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.skill .title{
+	padding-left: 882px;
+}
+
+/*-------------------------- 工作經驗 --------------------------*/
+.workExp{
+	position: relative;
+}
+.expList{
+	margin-left: 24px;
+	padding-left: 24px;
+	border-left: 3px solid rgba(0,0,0,0.1);
+}
+
+.expList .desc{
+	width: 642px;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+
+
+/*-------------------------- 聯絡方式 --------------------------*/
+
+.contact{
+	text-align: center;
+	padding-top: 24px;
+	font-family: 'Roboto';
+}
+
+.contact li{
+	margin-bottom: 16px;
+	font-size: 24px;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.contact .subLine{
+	width: 1200px;
+	margin-top: 8px;
+	margin-bottom: 32px;
+	border: 1px solid #fff;
+	opacity: 0.3;
+}
+
+.contact .logos img{
+	margin-right: 24px;
+	margin-bottom: 26px;
+}
