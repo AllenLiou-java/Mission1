@@ -49,13 +49,9 @@ table {
 
 /* 內容樣式 */
 
-/* font-family: 'Noto Sans', sans-serif;
-font-family: 'Noto Sans TC', sans-serif;
-font-family: 'Roboto', sans-serif; */
-
 body,html{
-	font-family: 'Noto Sans';
-	font-weight: normal;
+	font-family: 'Roboto','Noto Sans';
+	font-weight: bold;
 }
 
 p,li{
@@ -64,27 +60,25 @@ p,li{
 }
 
 .page{
-	width: 1920px;
-    height: 3017px;
+	width: 1200px;
 	padding-top: 47px;
 	padding-bottom: 0px;
-	border: 1px solid #000;
+	margin: 0 auto;
 	/* background-color: yellow; */
-}
-
-.page .intro, .page .workExp{
-    padding-left: 360px;
-	padding-right: 360px;
-	
 }
 
 
 /*-------------------------- 自介區塊 --------------------------*/
 
+.intro .name{
+	border-bottom: 1px solid #000;
+	width: 1200px;
+	padding-bottom: 17px;
+}
+
 .intro .name h1{
 	font-size: 80px;
 	line-height: 94px;
-	font-family: 'Roboto','Regular';
 }
 
 .intro .myphoto img{
@@ -94,43 +88,30 @@ p,li{
 	margin-bottom: 48px;
 }
 
-.intro .line{
-	border: 2px solid #000;
-	background-color: #000;
-	margin-top: 17px;
-}
-
-
 /*-------------------------- 自介區塊 - 開頭 --------------------------*/
 .title{
 	font-size: 32px;
 	line-height: 43px;
-	font-family: 'Noto Sans TC', 'Noto Sans';
+	border-bottom: 1px solid #000;
+	padding-bottom: 8px;
+	margin-bottom: 16px;
 }
 
 .subtitle{
 	font-size: 24px;
-	font-family: 'Noto Sans TC', 'Noto Sans';
 	line-height: 28px;
 	margin-left: 16px;
 }
 
 .intro .title, .workExp .title{
 	color: #000;
-	margin-bottom: 8px;
+	width: 1200px;
 }
 
 .intro .subtitle, .workExp .subtitle{
 	color: #A00404;
 }
 
-.intro .subLine, .workExp .subLine{
-	border: 1px solid #000;
-	background-color: #000;
-	margin-top: 8px;
-	margin-bottom: 16px;
-	opacity: 0.3;
-}
 
 .intro li, .workExp li{
 	margin-bottom: 24px;
@@ -143,7 +124,7 @@ p,li{
 
 /*-------------------------- 技能區塊 --------------------------*/
 
-.page .skill, .page .contact{
+.skill, .contact{
 	/* text-align: center; */
 	background-color: #415165;
 	margin-top: 72px;
@@ -152,23 +133,26 @@ p,li{
 }
 
 .skill{
+	width: 100%;
 	padding-top: 24px;
 	padding-bottom: 16px;
-	position: relative;
 }
 
-.skill .subLine{
+.skill .title{
 	width: 996px;
-	margin-top: 8px;
+	padding-bottom: 8px;
 	margin-bottom: 40px;
-	border: 1px solid #fff;
-	opacity: 0.3;
+	border-bottom: 2px solid #fff;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
+
 
 .skillList{
-	position: relative;
-	left: 852px;
+	width: 192px;
 	padding-left: 24px;
+	margin-left: calc(50% - 110px);
 	border-left: 3px solid rgba(255,255,255,0.3);
 }
 
@@ -177,9 +161,6 @@ p,li{
 	color: rgba(255, 255, 255, 0.7);
 }
 
-.skill .title{
-	padding-left: 882px;
-}
 
 /*-------------------------- 工作經驗 --------------------------*/
 .workExp{
@@ -191,10 +172,13 @@ p,li{
 	border-left: 3px solid rgba(0,0,0,0.1);
 }
 
-.expList .desc{
-	width: 642px;
+.desc{
 	font-size: 20px;
 	line-height: 30px;
+}
+
+.expList .desc{
+	width: 642px;
 }
 
 
@@ -203,8 +187,20 @@ p,li{
 
 .contact{
 	text-align: center;
+	width: 100%;
 	padding-top: 24px;
-	font-family: 'Roboto';
+	padding-bottom: 20px;
+	margin-bottom: 0;
+}
+
+.contact .title{
+	width: 1200px;
+	padding-bottom: 8px;
+	margin-bottom: 32px;
+	border-bottom: 2px solid #fff;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
 
 .contact li{
@@ -213,15 +209,23 @@ p,li{
 	color: rgba(255, 255, 255, 0.7);
 }
 
-.contact .subLine{
-	width: 1200px;
-	margin-top: 8px;
-	margin-bottom: 32px;
-	border: 1px solid #fff;
-	opacity: 0.3;
+
+.info-link a{
+	text-decoration: none;
+	color: white;
 }
 
-.contact .logos img{
+.info-link a:hover{
+	color: blue;
+}
+
+.icons{
+	display: flex;
+	justify-content: center;
+}
+
+.icons li{
+	text-align: center;
 	margin-right: 24px;
-	margin-bottom: 26px;
+	margin-bottom: 0px;
 }
